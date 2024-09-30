@@ -1,0 +1,150 @@
+/* Container for the Post With Code Page */
+.post-with-code-container {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .post-with-code-container:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Title styling */
+  h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+  }
+  
+  /* Form styling */
+  form {
+    margin-bottom: 40px;
+  }
+  
+  .form-section {
+    margin-bottom: 25px;
+  }
+  
+  .form-section label {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    resize: vertical;
+    transition: border 0.3s ease;
+  }
+  
+  textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* CodeMirror editor styling */
+  .CodeMirror {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 8px;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+  }
+  
+  .CodeMirror-focused {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* Submit Button styling */
+  .submit-button {
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 86, 179, 0.2);
+  }
+  
+  /* Preview Section */
+  .preview-section {
+    margin-top: 50px;
+    padding: 25px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .preview-section h3 {
+    font-size: 1.8rem;
+    color: #007bff;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .preview-section pre {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    line-height: 1.5;
+  }
+  
+  .preview-section pre code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .post-with-code-container {
+      padding: 30px 15px;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    textarea, .CodeMirror {
+      font-size: 0.9rem;
+    }
+  
+    .submit-button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  
+    .preview-section h3 {
+      font-size: 1.5rem;
+    }
+  }
+  

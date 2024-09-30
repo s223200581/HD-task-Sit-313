@@ -1,0 +1,165 @@
+/* ChatGPT Assistant Container */
+.chatgpt-assistant-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Chat Box Layout */
+  .chat-box {
+    width: 600px;
+    max-width: 100%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .chat-box:hover {
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chat-box h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2rem;
+    font-weight: 700;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Chat Container - For Messages */
+  .chat-container {
+    flex-grow: 1;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    overflow-y: auto;
+    max-height: 450px;
+    box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Message Styles */
+  .user-message,
+  .assistant-message {
+    margin-bottom: 15px;
+    padding: 12px 18px;
+    border-radius: 20px;
+    max-width: 75%;
+    font-size: 1rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .user-message {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.1);
+  }
+  
+  .assistant-message {
+    background-color: #f1f1f1;
+    color: #333;
+    align-self: flex-start;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Input Area */
+  .chat-input-area {
+    display: flex;
+    gap: 15px;
+    padding-top: 10px;
+  }
+  
+  .chat-input-area textarea {
+    flex-grow: 1;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    resize: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .chat-input-area textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+  }
+  
+  .chat-input-area button {
+    padding: 15px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .chat-input-area button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 18px rgba(0, 91, 179, 0.3);
+  }
+  
+  .chat-input-area button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Scrollbar for Chat Container */
+  .chat-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .chat-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 8px;
+  }
+  
+  .chat-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .chat-box {
+      padding: 20px;
+    }
+  
+    .chat-input-area textarea {
+      padding: 12px;
+    }
+  
+    .chat-input-area button {
+      padding: 12px 20px;
+    }
+  }
+  

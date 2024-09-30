@@ -1,0 +1,34 @@
+/* PostTypeSelection.css */
+
+/* Radio button styling */
+.post-type-selection .ui.radio label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+    margin-right: 30px;
+  }
+  
+  .post-type-selection .ui.radio input {
+    margin-right: 10px;
+  }
+  
+  /* Segment Styling */
+  .post-type-selection .ui.segment {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .post-type-selection .ui.segment:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-type-selection h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #1e212b;
+    margin-bottom: 1.5rem;
+  }
+  

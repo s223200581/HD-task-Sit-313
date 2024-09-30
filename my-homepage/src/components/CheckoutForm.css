@@ -1,0 +1,110 @@
+/* Main Payment Container */
+.payment-container {
+    padding: 100px 2rem;  /* Increased padding to prevent header overlap */
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;  /* Center the container */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+}
+
+/* Header Styling */
+.payment-container h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;  /* Increased font size for better hierarchy */
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #007bff;  /* Underline effect */
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);  /* Soft shadow for form */
+}
+
+/* Stripe Elements Styling */
+form .StripeElement {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    background-color: #f1f1f1;  /* Light background to differentiate */
+}
+
+/* Input Fields */
+form input {
+    margin-bottom: 1.5rem;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #007bff;  /* Blue focus border */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 12px rgba(0, 91, 179, 0.3);
+}
+
+/* Disabled Button State */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .payment-container {
+        padding: 80px 1.5rem;
+    }
+
+    .payment-container h2 {
+        font-size: 2rem;  /* Adjusted font size for mobile */
+    }
+
+    form {
+        padding: 1.5rem;
+    }
+
+    form input, form .StripeElement {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}

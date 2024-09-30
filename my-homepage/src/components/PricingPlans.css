@@ -1,0 +1,146 @@
+/* Pricing Plans Container */
+.pricing-container {
+    padding: 100px 1.5rem; /* Adjusted padding to prevent overlap with header */
+    background-color: #f4f4f9; /* Softer background color for better contrast */
+    text-align: center;
+    max-width: 1200px; /* Constrain the width for better presentation */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Header */
+.pricing-header {
+    font-size: 3rem; /* Larger header for better visibility */
+    margin-bottom: 3rem; /* Increased margin for more space */
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #007bff; /* Stronger underline effect */
+    padding-bottom: 1.5rem;
+    display: inline-block;
+}
+
+/* Pricing Card Container */
+.pricing-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem; /* Added spacing between cards */
+}
+
+/* Pricing Card Styling */
+.pricing-card {
+    padding: 2.5rem;
+    background-color: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 2rem;
+    text-align: left;
+    max-width: 350px;
+    margin: 1rem auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Featured Plan Styling */
+.pricing-card.featured {
+    border: 2px solid #ffc107;
+    background-color: #fffbea;
+}
+
+.pricing-card.featured::before {
+    content: "Popular";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffc107;
+    color: white;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-bottom-left-radius: 10px;
+}
+
+/* Hover effect for the pricing card */
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Plan Name */
+.plan-name {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    color: #007bff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Plan Price */
+.plan-price {
+    font-size: 2rem;
+    color: #28a745; /* Green color for pricing */
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+/* Plan Description */
+.plan-description {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.plan-description li {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.plan-description li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Button Styling */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 12px rgba(0, 91, 179, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-header {
+        font-size: 2.5rem;
+    }
+
+    .pricing-card {
+        max-width: 100%;
+    }
+}

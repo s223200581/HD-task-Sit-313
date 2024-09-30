@@ -1,0 +1,68 @@
+/* Message Input Form Container */
+.message-input-form {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* Input Field Styling */
+.message-input-form input {
+    flex-grow: 1;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+/* Input Focus Effect */
+.message-input-form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.1);
+}
+
+/* Send Button Styling */
+.message-input-form button {
+    padding: 15px 25px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Send Button Hover Effect */
+.message-input-form button:hover {
+    background-color: #218838;
+    box-shadow: 0 6px 16px rgba(33, 136, 56, 0.2);
+}
+
+/* Disabled Button Styling */
+.message-input-form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Button Active/Pressed Effect */
+.message-input-form button:active {
+    background-color: #1e7e34;
+    box-shadow: 0 3px 8px rgba(33, 136, 56, 0.3);
+}
+
+/* Responsive Design: Adjust input and button sizes on smaller screens */
+@media (max-width: 768px) {
+    .message-input-form input {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    .message-input-form button {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+}

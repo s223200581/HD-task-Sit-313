@@ -1,0 +1,258 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #1e212b;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* App container styling */
+.App {
+  text-align: center;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+
+/* Logo styles */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Header styles */
+.header-menu {
+  background-color: #1e212b;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-menu h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.header-menu .menu-item {
+  color: #61dafb;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.header-menu .menu-item:hover {
+  color: #21a1f1;
+}
+
+/* Link styling */
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.App-link:hover {
+  color: #21a1f1;
+  text-decoration: underline;
+}
+
+/* Spin animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Card section headers */
+h2 {
+  font-size: 2rem;
+  margin: 40px 0;
+  color: #1e212b;
+  text-align: left;
+  padding-left: 20px;
+  font-weight: 600;
+}
+
+/* Featured section styling */
+.featured-section {
+  padding: 40px 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Button styling for "See all" buttons */
+.see-all-button {
+  background-color: #61dafb;
+  color: white;
+  margin-top: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.see-all-button:hover {
+  background-color: #21a1f1;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer styles */
+.App-footer {
+  background-color: #1e212b;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.footer h4 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.footer p, .footer a {
+  color: #ccc;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.footer a:hover {
+  color: #61dafb;
+  text-decoration: underline;
+}
+
+/* Article and Tutorial Card styling */
+.ui.card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.ui.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.ui.card .header {
+  font-size: 1.5rem;
+  color: #1e212b;
+  font-weight: 600;
+}
+
+.ui.card .description {
+  color: #4a4a4a;
+  font-size: 0.95rem;
+}
+
+.ui.card .image {
+  height: 200px;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+}
+
+.ui.card .image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Grid layout adjustments */
+.ui.grid > .column {
+  margin-bottom: 20px;
+}
+
+/* Newsletter Signup Styles */
+.newsletter-signup {
+  background-color: #f1f1f1;
+  padding: 40px 20px;
+  text-align: center;
+  width: 100%;
+  border-top: 2px solid #e2e2e2;
+}
+
+.newsletter-signup h2 {
+  font-size: 1.8rem;
+  color: #1e212b;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.newsletter-signup .ui.input input {
+  width: 350px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.newsletter-signup .ui.button {
+  background-color: #61dafb;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.newsletter-signup .ui.button:hover {
+  background-color: #21a1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .featured-section {
+    padding: 20px 10px;
+  }
+
+  .ui.grid > .column {
+    padding: 0 10px;
+  }
+
+  .App-header {
+    font-size: calc(10px + 2vmin);
+  }
+
+  .newsletter-signup .ui.input input {
+    width: 100%;
+  }
+}

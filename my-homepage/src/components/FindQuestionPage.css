@@ -1,0 +1,173 @@
+/* General Page Styling */
+.find-question-page {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 100px;  /* Increased padding to prevent overlap with the header */
+}
+
+/* Header Styling */
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* Filter Container */
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;  /* Increased space below filter bar */
+}
+
+.filter-container input,
+.filter-container select {
+  width: 48%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.filter-container input:focus,
+.filter-container select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.filter-container select {
+  background-color: #fff;
+}
+
+/* New Question Form */
+.new-question-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.new-question-form input {
+  width: 30%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.new-question-form input:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.3);
+}
+
+.new-question-form button {
+  padding: 12px 25px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.new-question-form button:hover {
+  background-color: #218838;
+  box-shadow: 0 4px 12px rgba(33, 136, 56, 0.3);
+}
+
+/* Questions List */
+.questions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;  /* Increased gap between questions */
+  margin-bottom: 50px;
+}
+
+/* Question Card */
+.question-card {
+  background-color: #fff;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);  /* Softer shadow for card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.question-card:hover {
+  transform: translateY(-5px);  /* Slight lift on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.question-card h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.75rem;  /* Larger font size for title */
+  font-weight: 600;
+}
+
+.question-card p {
+  color: #666;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* Actions inside the card */
+.card-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card-actions button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-actions button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.card-actions button:first-child:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 12px rgba(0, 91, 179, 0.3);
+}
+
+.card-actions button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.card-actions button:last-child:hover {
+  background-color: #c82333;
+  box-shadow: 0 4px 12px rgba(200, 35, 51, 0.3);
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .filter-container, .new-question-form {
+    flex-direction: column;
+    gap: 15px;  /* Increased spacing between inputs on mobile */
+  }
+
+  .filter-container input,
+  .filter-container select,
+  .new-question-form input,
+  .new-question-form button {
+    width: 100%;
+  }
+}

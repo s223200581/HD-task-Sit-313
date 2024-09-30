@@ -1,0 +1,118 @@
+/* Container styling for both login and signup forms */
+.signup-form, .login-form {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 12px;
+  background-color: #ffffff; /* Pure white background */
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+  transition: all 0.3s ease-in-out;
+}
+
+.signup-form:hover, .login-form:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Add a stronger shadow on hover */
+}
+
+.signup-form h2, .login-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 700; /* Bold heading */
+  color: #333333; /* Dark, elegant color */
+}
+
+/* Input fields */
+.signup-form input, .login-form input {
+  width: 100%;
+  padding: 14px; /* Larger padding for modern feel */
+  margin: 15px 0;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  color: #333333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-form input:focus, .login-form input:focus {
+  border-color: #007bff; /* Light blue focus color */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2); /* Subtle glow effect */
+  outline: none;
+  background-color: #ffffff; /* Brighter on focus */
+}
+
+/* Button styling */
+.signup-form button, .login-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #007bff; /* Bright primary blue */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-form button:hover, .login-form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  box-shadow: 0 10px 20px rgba(0, 91, 179, 0.3); /* Subtle shadow effect */
+}
+
+/* Text and links below the form */
+.signup-form p, .login-form p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #666666; /* Softer gray for text */
+}
+
+.signup-form p a, .login-form p a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-form p a:hover, .login-form p a:hover {
+  text-decoration: underline;
+}
+
+/* Error message styling */
+.error {
+  color: #dc3545; /* Bright red for errors */
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Add smooth transition for form appearance */
+.signup-form, .login-form {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Form slides up slightly */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .signup-form, .login-form {
+    max-width: 90%; /* Reduce form width on smaller screens */
+    padding: 30px;  /* Reduce padding */
+  }
+
+  .signup-form h2, .login-form h2 {
+    font-size: 1.5rem; /* Smaller heading on mobile */
+  }
+}
